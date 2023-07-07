@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games</title>
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+   
+    <style>
+        body {
+    font-family: "Lato", sans-serif;
+   
+    
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-left: 100px;
+  }
+  
+  #main {
+    transition: margin-right .5s;
+    text-align: right;
+    text-align: top;
+    padding-right: 30px;
+  }
+
+  .bye{
+    padding-top: 30px;
+  }
+ 
+  .remove-text-decoration{
+    text-decoration: none;
+  }
+
+  .slides{
+    font-style: italic;
+  }
+  
+  .check{
+    padding-bottom: 30px;
+  }
+
+  .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+        }
+
+        /* Modal content */
+        .modal-content {
+            background-color: #fefefe;
+            color: #000000;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            font-size: 25px;
+        }
+
+        /* Close button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: right;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: right;
+        }
+
+ </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="bye">
+        <img src="https://www.drreddys.com/images/DrR_Logo_Primary_RGB_v3.jpg"  height="50" alt="brand logo">
+        </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/rps.html" target="_blank">Rock Paper Scissors</a>
+    <a href="/gg.html" target="_blank">Word Guess</a>
+    <a href="/hc.html" target="_blank">Code Breaker</a>
+    <a href="/ttt.html" target="_blank">Word Puzzle</a>
+    <a href="/mc.html" target="_blank">Memory Card</a>
+   
+  </div>
+
+  
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+  </div>
+    </header>
+     
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                 <!--Slide 1-->
+                <h1>Welcome to the gaming zone</h1>
+                <p>Let's see if you can beat the hacker and get promoted to the cheif of general position.</p>
+            </section>
+
+    <section>
+        <button id="myBtn1" class="m-4">Instructions</button>
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="text-center" style="color: #000000;">How To Play</h2>
+                <p>Despite its underlying complexity, the game’s rules are straightforward. Players deliver hand signals representing rock, paper, or scissors, with the outcome determined by these three rules:</p>
+                    <p class="card-text"><ol>
+                        <li>Rock wins against scissors.</li>
+                        <li>Scissors win against paper.</li>
+                        <li>Paper wins against rock.</li>
+                    </ol></p>
+                    <p>Remember to use the “Rock Paper Scissors Shoot” or “1, 2, 3, Shoot” method for a fair and synchronized start.</p>
+            </div>
+        </div>
+            <h2>Level 1</h2>
+            <h4>Rock Paper Scissors</h4>
+            <p>This is the first level.Be careful while you take your step. Each and every step is very crucial here.</p>
+            
+    </section>
+
+    <section>
+        <button id="myBtn2" class="m-4">Instructions</button>
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="text-center" style="color: #000000;">How To Play</h2>
+                <ol>
+                    <li>It is a simple game.</li>
+                    <li>You will have to guess the characters to form the word.</li>
+                    <li>You will get 7 chances and 45 secs time to crack the word.</li>
+                    <li>If your score is 2 and above only you will be eligible to play the next level.</li>
+                  </ol>
+                  <br>
+                <h2 class="text-center"  style="color: #000000;">Points To Remenber</h2>
+                <ol>
+                    <li>There are 5 words in total to solved.</li>
+                    <li>Few are related to cyber and few are general based words.</li>
+                    <li>You have to give a character whether it is right or wrong to go the next question.</li>
+                    <li>Keep guessing the characters according to the given clue.</li>     
+                  </ol>
+            </div>
+        </div>
+            <h2>Level 2</h2>
+            <h4>Guess Game</h4>
+            <p>This is the second level. You have to guess the words correctly in the given limited time and moves.</p>
+    </section>
+
+    <section>
+        <button id="myBtn3" class="m-4">Instructions</button>
+        <div id="myModal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="text-center"  style="color: #000000;">How To Play</h2>
+                <ol>
+                    <li>In this Code Breaker game, the player needs to guess the secret 3-digit code generated by the hacker.</li>
+                    <li>The player enters a 3-digit number in the input field and clicks the "Guess" button.</li>
+                      <li>The game compares the player's guess with the secret code and provides feedback in the format of "X X X" </li>
+                   <li>If any of the digit is matched instead of "X" the particular number will be placed and you have to guess the other digits by placing this digit also
+                   </li>
+                   <li>Example: You Have guessed: 123 and the ten's digit is 2 in the code the hacker proivded so it will give "X 2 X" . Now you can try "324" or anything similar to it.</li>               
+                   <li>You are given a total of 10 chances to crack the code and everytime you need to give the 3 digit code.</li>
+                 </ol>
+            </div>
+        </div>
+            <h2>Level 3</h2>
+            <h4>Code Breaker</h4>
+            <p>This is the third level. Crack the code and prove that we are secure.</p>
+            
+    </section>
+
+
+    <section>
+        <button id="myBtn4" class="m-4">Instructions</button>
+        <div id="myModal4" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="text-center"  style="color: #000000;">How To Play</h2>
+                <ol>
+                    <li>It is a simple game.</li>
+                    <li>You will have to guess the given scrambled word correctly to get a point.</li>
+                    <li>You will get 3 chances and 20 secs timer to crack the scrambled word.</li>
+                    <li>If your score is 6 and above only you will be eligible to play the next level.</li>
+                  </ol>
+                  <br>
+                  <h2 class="text-center"  style="color: #000000;">Points to Remember</h2>
+                  <ol>
+                    <li>These scrambled words are cyber theme related.</li>
+                    <li>You have to give an answer whether it is right or wrong to go the next question.</li>
+                    <li>There are a few tricky questions where the word spacing is not properly given!..Careful with those words</li>
+                  </ol>
+
+            </div>
+        </div>
+            <h2>Level 4</h2>
+            <h4>Word Puzzle</h4>
+            <p>This is the fourth level. Remember to guess the word correctly Show your ability here!.</p>
+          
+    </section>
+
+    <section>
+        <button id="myBtn5" class="m-4">Instructions</button>
+    <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-center"  style="color: #000000;">How To Play</h2>
+            <ol>
+                <li>The cards are shuffled and are facing face down in rows on the web.</li>
+                <li>The player turns over 2 cards. </li>
+                <li>If the pictures match, the player keeps the cards and tries again for another match. </li>
+                <li>If they do not match the cards are turned over again and the player goes for the next set of cards.</li>
+                <li>The player must try to remember where they have seen cards, so they can use them to make a match.</li>
+                <li>Remember:
+                    <ul>
+                        <li>Firstly you can select your set of cards randomly.</li>
+                        <li>These cards are related to cyber security.</li>
+                        <li>The overall round is about 45 secs and the total moves given are 15.</li>
+                    </ul>
+                </li>
+    
+              </ol>
+            
+        </div>
+    </div>
+            <h2>Level 5</h2>
+            <h4>Memory Card</h4>
+            <p>This is the fourth level. Remember the card placement correctly. You have to beat the hacker to gain your post.</p>
+           
+    </section>
+
+    <section>
+        <h2>Start your game!</h2>
+        <button>
+            <a href="/rpsgame.html">1st Level</a>
+        </button>
+        </section>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+        <script>
+            // Get the modals
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+        var modal5 = document.getElementById("myModal5");
+
+        // Get the buttons that open the modals
+        var btn1 = document.getElementById("myBtn1");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("myBtn4");
+        var btn5 = document.getElementById("myBtn5");
+
+        // Get the <span> element that closes the modal
+        var span1 = modal1.getElementsByClassName("close")[0];
+        var span2 = modal2.getElementsByClassName("close")[0];
+        var span3 = modal3.getElementsByClassName("close")[0];
+        var span4 = modal4.getElementsByClassName("close")[0];
+        var span5 = modal5.getElementsByClassName("close")[0];
+
+        // Function to open modal 1
+        btn1.onclick = function () {
+            modal1.style.display = "block";
+        };
+
+        // Function to open modal 2
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        };
+
+        // Function to open modal 3
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+        };
+
+        // Function to open modal 4
+        btn4.onclick = function () {
+            modal4.style.display = "block";
+        };
+
+        // Function to open modal 5
+        btn5.onclick = function () {
+            modal5.style.display = "block";
+        };
+
+        // Function to close modal 1
+        span1.onclick = function () {
+            modal1.style.display = "none";
+        };
+
+        // Function to close modal 2
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        };
+
+        // Function to close modal 3
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        };
+
+        // Function to close modal 4
+        span4.onclick = function () {
+            modal4.style.display = "none";
+        };
+
+        // Function to close modal 5
+        span5.onclick = function () {
+            modal5.style.display = "none";
+        };
+
+        // Close the modal when clicking outside the modal content
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+            if (event.target == modal5) {
+                modal5.style.display = "none";
+            }
+        };
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
+       
+       <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>   
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="vendor/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
